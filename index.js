@@ -13,8 +13,6 @@ app.get('/', (req, res) => {
     res.send('hello')
 })
 
-console.log()
-
 
 const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.8mn4lkn.mongodb.net/?retryWrites=true&w=majority`;
